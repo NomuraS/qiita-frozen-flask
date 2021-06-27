@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Index</h3>
+<!-- hello_functionを呼び出して、これの引数にname1やname2にしてしている -->
+<a href="{{url_for('hello_function', page_name=name1)}}">go to {{ name1 }}</a>
+<br>
+<a href="{{url_for('hello_function', page_name=name2)}}">go to {{ name2 }}</a>
+{% endblock %}
